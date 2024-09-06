@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333333;
+    }
+    .container {
+        width: 900px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+
+    h2 {
+        font-family: "Roboto", system-ui;
+        font-weight: bold;
+        font-style: normal;
+        color: #333333;
+        margin: 10px;
+        font-size: 26px;
+    }
+
+    h3 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .grid-item {
+        background-color: rgba(190, 190, 190, 0.3);
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        color: #aad1e9;
+    }
+
+    .noto-color-emoji-regular {
+        font-family: "Noto Color Emoji", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-item {
+            padding: 15px;
+        }
+    }
